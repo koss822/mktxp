@@ -54,8 +54,8 @@ class RouterAPIConnection:
 
         self.connection = RouterOsApiPool(
             host=self.config_entry.hostname,
-            username=os.environ['username'] if self.config_entry.username == 'environ' else self.config_entry.username
-            password=os.environ['password'] if self.config_entry.password == 'environ' else self.config_entry.password
+            username=os.environ['username'] if self.config_entry.username == 'environ' else self.config_entry.username,
+            password=os.environ['password'] if self.config_entry.password == 'environ' else self.config_entry.password,
             port=self.config_entry.port,
             plaintext_login=True,
             use_ssl=self.config_entry.use_ssl,

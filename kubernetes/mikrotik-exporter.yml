@@ -6,7 +6,7 @@ metadata:
 data:
   mktxp.conf: |
     [Home-Router]
-    enabled = False         # turns metrics collection for this RouterOS device on / off
+    enabled = True         # turns metrics collection for this RouterOS device on / off
 
     hostname = MIKROTIK_HOSTNAME    # RouterOS IP address
     port = 8728             # RouterOS API / API-SSL service port
